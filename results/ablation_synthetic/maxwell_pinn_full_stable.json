@@ -1,0 +1,72 @@
+{
+  "meta": {
+    "model": "enhanced",
+    "difficulty": "hard",
+    "seed": 0,
+    "F": 52,
+    "T": 32,
+    "num_classes": 8,
+    "git_commit": "641092dcea625170d0b4bfbf3c9e97f6ea7ed5a2",
+    "git_branch": "feat/enhanced-model-and-sweep",
+    "device": "cuda",
+    "timestamp": "2026-02-01T03:10:27.128950Z"
+  },
+  "args": {
+    "model": "enhanced",
+    "difficulty": "hard",
+    "seed": 0,
+    "epochs": 50,
+    "batch": 64,
+    "n_samples": 5000,
+    "T": 32,
+    "F": 52,
+    "sc_corr_rho": 0.5,
+    "env_burst_rate": 0.1,
+    "gain_drift_std": 0.1,
+    "class_overlap": 0.8,
+    "label_noise_prob": 0.0,
+    "early_metric": "macro_f1",
+    "patience": 10,
+    "ckpt_dir": "D:\\phd_workspace\\paperA\\results_gpu\\maxwell_ablation\\checkpoints",
+    "logit_l2": 0.0,
+    "temp_mode": "logspace",
+    "temp_min": 1.0,
+    "temp_max": 5.0,
+    "temp_steps": 100,
+    "val_split": 0.5,
+    "fixed_temp": 1.0,
+    "out_json": "D:\\phd_workspace\\paperA\\results_gpu\\maxwell_ablation\\maxwell_pinn_full_stable.json"
+  },
+  "metrics": {
+    "macro_f1": 0.058243434673640626,
+    "ece_raw": 0.48348774209618567,
+    "ece_cal": 0.08654912650585175,
+    "nll_raw": 3.388317108154297,
+    "nll_cal": 2.0724644660949707,
+    "brier": 0.10898318980718794,
+    "mutual_misclass": 0.119557006160424,
+    "temperature": 5.0,
+    "falling_f1": 0.058243434673640626
+  },
+  "seed": 0,
+  "best_ckpt": null,
+  "early_stop": {
+    "metric": "macro_f1",
+    "best_value": 0.12785311601439306,
+    "best_epoch": 11,
+    "patience": 10
+  },
+  "data_params": {
+    "n_samples": 5000,
+    "sc_corr_rho": 0.5,
+    "env_burst_rate": 0.1,
+    "gain_drift_std": 0.1,
+    "class_overlap": 0.8,
+    "label_noise_prob": 0.0
+  },
+  "calibration": {
+    "temperature": 5.0,
+    "best_nll": 2.0634405612945557,
+    "method": "logspace"
+  }
+}

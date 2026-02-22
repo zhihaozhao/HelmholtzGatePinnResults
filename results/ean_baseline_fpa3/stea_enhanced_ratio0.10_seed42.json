@@ -1,0 +1,83 @@
+{
+  "protocol": "Sim2Real",
+  "model": "enhanced",
+  "seed": 42,
+  "label_ratio": 0.1,
+  "transfer_method": "fine_tune",
+  "zero_shot_metrics": {
+    "macro_f1": 0.03571428571428571,
+    "falling_f1": 0.03571428571428571,
+    "epileptic_fall_f1": 0.0,
+    "elderly_fall_f1": 0.0,
+    "behavior_f1": {
+      "Normal Walking": 0.0,
+      "Shaking Limbs": 0.2857142857142857,
+      "Facial Twitching": 0.0,
+      "Punching": 0.0,
+      "Kicking": 0.0,
+      "Epileptic Fall": 0.0,
+      "Elderly Fall": 0.0,
+      "Fall and Can't Get Up": 0.0
+    },
+    "ece": 0.03851575844259146
+  },
+  "target_metrics": {
+    "macro_f1": 0.7715794971389616,
+    "falling_f1": 0.7715794971389616,
+    "epileptic_fall_f1": 0.8380202474690663,
+    "elderly_fall_f1": 0.8761904761904762,
+    "behavior_f1": {
+      "Normal Walking": 0.9460020768431984,
+      "Shaking Limbs": 0.9418994413407821,
+      "Facial Twitching": 0.9732386673948662,
+      "Punching": 0.0,
+      "Kicking": 0.75,
+      "Epileptic Fall": 0.8380202474690663,
+      "Elderly Fall": 0.8761904761904762,
+      "Fall and Can't Get Up": 0.8472850678733032
+    },
+    "ece": 0.03373901176376601
+  },
+  "meta": {
+    "run_id": "D4-Sim2Real-V1-20260222-112018-4db2766a",
+    "phase": "D4",
+    "exp": "Sim2Real",
+    "ver": "V1",
+    "desc": "Sim2Real fine_tune with 10.0% labels",
+    "time_start": "2026-02-22T11:20:18",
+    "args": {
+      "model": "enhanced",
+      "protocol": "sim2real",
+      "seed": 42.0,
+      "epochs": 50.0,
+      "out": "D:\\phd_workspace\\paperA\\results_gpu\\maxwell_fpa3\\stea_enhanced_ratio0.10_seed42.json",
+      "resume": 0.0,
+      "benchmark_path": "benchmarks/wifi_csi_benchmark",
+      "files_per_activity": 3.0,
+      "output_dir": "results",
+      "d2_model_path": "",
+      "label_ratio": 0.1,
+      "transfer_method": "fine_tune",
+      "skip_synth_pretrain": 0.0,
+      "lr": 0.001,
+      "batch_size": 128.0,
+      "class_weight": "inv_freq",
+      "loso_all_folds": 0.0,
+      "patience": 10.0,
+      "min_epochs": 15.0,
+      "loro_all_folds": 0.0,
+      "positive_class": 5.0,
+      "amp": 1.0,
+      "checkpoint_dir": "checkpoints/maxwell_cdae",
+      "num_workers": 4.0,
+      "input_norm": "zscore",
+      "norm_eps": 1e-06,
+      "source": "synth",
+      "target": "real",
+      "difficulty": "mid",
+      "n_samples": 2000.0,
+      "T": 128.0,
+      "F": 30.0
+    }
+  }
+}

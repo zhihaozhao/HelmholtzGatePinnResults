@@ -1,0 +1,38 @@
+2026-02-22 11:51:31,665 [INFO] Starting training with args: {'model': 'enhanced', 'difficulty': 'hard', 'seed': 42, 'F': 52, 'T': 32, 'num_classes': 8, 'epochs': 100, 'batch': 64, 'n_samples': 5000, 'early_metric': 'macro_f1', 'patience': 10, 'ckpt_dir': 'D:\\phd_workspace\\paperA\\results_gpu\\maxwell_pinn_real\\pretrain', 'logit_l2': 0.0, 'sc_corr_rho': 0.5, 'env_burst_rate': 0.1, 'gain_drift_std': 0.1, 'class_overlap': 0.8, 'temp_mode': 'logspace', 'temp_min': 1.0, 'temp_max': 5.0, 'temp_steps': 100, 'val_split': 0.5, 'fixed_temp': 1.0, 'label_noise_prob': 0.0, 'cache_dir': 'cache/synth_data', 'amp': False, 'save_ckpt': 'final', 'num_workers_override': -1, 'prefetch_factor': 2, 'val_every': 1, 'out_json': 'D:\\phd_workspace\\paperA\\results_gpu\\maxwell_pinn_real\\pretrain\\enhanced_gate_s42.json', 'log_dir': '', 'pinn_lambda_smooth': 0.0, 'pinn_lambda_energy': 0.0, 'pinn_ms_windows': '32,64,128', 'pinn_mamba_dmodel': 192, 'pinn_mamba_layers': 3, 'lambda_phy_mse': 0.5, 'lambda_phy_res': 0.05, 'residual_threshold': 0.05, 'use_residual_gate': True}
+2026-02-22 11:51:31,665 [INFO] Logs saved to: D:\phd_workspace\paperA\results_gpu\maxwell_pinn_real\pretrain\logs\enhanced_gate_s42.log
+2026-02-22 11:51:31,686 [INFO] Using device: cuda
+2026-02-22 11:51:31,697 [INFO] Dataset: Train=3500, Val=750, Test=750
+2026-02-22 11:51:31,697 [INFO] DataLoader: num_workers=2, pin_memory=True
+2026-02-22 11:51:31,771 [INFO] Model: enhanced with 641355 params
+2026-02-22 11:51:35,269 [INFO] Epoch 1/100 - Val Loss: 2.1118
+2026-02-22 11:51:36,758 [INFO] Epoch 2/100 - Val Loss: 2.0957
+2026-02-22 11:51:38,255 [INFO] Epoch 3/100 - Val Loss: 2.0831
+2026-02-22 11:51:39,736 [INFO] Epoch 4/100 - Val Loss: 2.0796
+2026-02-22 11:51:41,220 [INFO] Epoch 5/100 - Val Loss: 2.0849
+2026-02-22 11:51:41,299 [INFO] Epoch 5/100 - Train Loss: 3249.3343, Val Loss: 2.0849, Val macro_f1: 0.0814
+2026-02-22 11:51:42,705 [INFO] Epoch 6/100 - Val Loss: 2.0893
+2026-02-22 11:51:44,195 [INFO] Epoch 7/100 - Val Loss: 2.0898
+2026-02-22 11:51:45,680 [INFO] Epoch 8/100 - Val Loss: 2.0865
+2026-02-22 11:51:47,166 [INFO] Epoch 9/100 - Val Loss: 2.1021
+2026-02-22 11:51:48,656 [INFO] Epoch 10/100 - Val Loss: 2.0809
+2026-02-22 11:51:48,737 [INFO] Epoch 10/100 - Train Loss: 3239.8868, Val Loss: 2.0809, Val macro_f1: 0.0935
+2026-02-22 11:51:50,154 [INFO] Epoch 11/100 - Val Loss: 2.0944
+2026-02-22 11:51:51,644 [INFO] Epoch 12/100 - Val Loss: 2.0901
+2026-02-22 11:51:53,128 [INFO] Epoch 13/100 - Val Loss: 2.0887
+2026-02-22 11:51:54,615 [INFO] Epoch 14/100 - Val Loss: 2.0668
+2026-02-22 11:51:56,107 [INFO] Epoch 15/100 - Val Loss: 2.0843
+2026-02-22 11:51:56,187 [INFO] Epoch 15/100 - Train Loss: 3183.0770, Val Loss: 2.0843, Val macro_f1: 0.0907
+2026-02-22 11:51:57,595 [INFO] Epoch 16/100 - Val Loss: 2.0774
+2026-02-22 11:51:59,085 [INFO] Epoch 17/100 - Val Loss: 2.0872
+2026-02-22 11:52:00,583 [INFO] Epoch 18/100 - Val Loss: 2.0947
+2026-02-22 11:52:02,077 [INFO] Epoch 19/100 - Val Loss: 2.0707
+2026-02-22 11:52:03,571 [INFO] Epoch 20/100 - Val Loss: 2.0934
+2026-02-22 11:52:03,650 [INFO] Epoch 20/100 - Train Loss: 3140.4807, Val Loss: 2.0934, Val macro_f1: 0.0839
+2026-02-22 11:52:05,061 [INFO] Epoch 21/100 - Val Loss: 2.0921
+2026-02-22 11:52:06,560 [INFO] Epoch 22/100 - Val Loss: 2.1020
+2026-02-22 11:52:06,637 [INFO] Early stopping at epoch 22
+2026-02-22 11:52:06,716 [INFO] Collected test logits and targets
+2026-02-22 11:52:06,720 [INFO] Calibration: T=5.0000, Details={'temperature': 5.0, 'best_nll': 2.07918643951416, 'method': 'logspace'}
+2026-02-22 11:52:06,887 [INFO] Saved full results to D:\phd_workspace\paperA\results_gpu\maxwell_pinn_real\pretrain\enhanced_gate_s42.json
+2026-02-22 11:52:06,906 [INFO] Final model saved to D:\phd_workspace\paperA\results_gpu\maxwell_pinn_real\pretrain\final_enhanced_gate_s42.pth
+2026-02-22 11:52:06,907 [INFO] Updated registry: results\registry.csv

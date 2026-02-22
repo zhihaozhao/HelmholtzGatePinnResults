@@ -1,0 +1,56 @@
+2026-02-01 11:41:39,958 [INFO] Starting training with args: {'model': 'enhanced', 'difficulty': 'hard', 'seed': 42, 'F': 52, 'T': 32, 'num_classes': 8, 'epochs': 100, 'batch': 64, 'n_samples': 5000, 'early_metric': 'macro_f1', 'patience': 10, 'ckpt_dir': 'results_gpu\\stea_ablation\\pretrain', 'logit_l2': 0.0, 'sc_corr_rho': 0.5, 'env_burst_rate': 0.1, 'gain_drift_std': 0.1, 'class_overlap': 0.8, 'temp_mode': 'logspace', 'temp_min': 1.0, 'temp_max': 5.0, 'temp_steps': 100, 'val_split': 0.5, 'fixed_temp': 1.0, 'label_noise_prob': 0.0, 'cache_dir': 'cache/synth_data', 'amp': False, 'save_ckpt': 'final', 'num_workers_override': -1, 'prefetch_factor': 2, 'val_every': 1, 'out_json': 'results_gpu\\stea_ablation\\pretrain\\out.json', 'log_dir': '', 'pinn_lambda_smooth': 0.0, 'pinn_lambda_energy': 0.0, 'pinn_ms_windows': '32,64,128', 'pinn_mamba_dmodel': 192, 'pinn_mamba_layers': 3, 'lambda_phy_mse': 1.0, 'lambda_phy_res': 0.1, 'residual_threshold': 0.05, 'use_residual_gate': False}
+2026-02-01 11:41:39,959 [INFO] Logs saved to: D:\phd_workspace\paperA\results_gpu\stea_ablation\pretrain\logs\out.log
+2026-02-01 11:41:39,980 [INFO] Using device: cuda
+2026-02-01 11:41:39,992 [INFO] Dataset: Train=3500, Val=750, Test=750
+2026-02-01 11:41:39,992 [INFO] DataLoader: num_workers=2, pin_memory=True
+2026-02-01 11:41:40,102 [INFO] Model: enhanced with 641355 params
+2026-02-01 11:41:45,453 [INFO] Epoch 1/100 - Val Loss: 1.3880
+2026-02-01 11:41:48,726 [INFO] Epoch 2/100 - Val Loss: 1.1172
+2026-02-01 11:41:51,859 [INFO] Epoch 3/100 - Val Loss: 0.9569
+2026-02-01 11:41:55,067 [INFO] Epoch 4/100 - Val Loss: 0.8156
+2026-02-01 11:41:58,232 [INFO] Epoch 5/100 - Val Loss: 0.8239
+2026-02-01 11:41:58,396 [INFO] Epoch 5/100 - Train Loss: 393.4755, Val Loss: 0.8239, Val macro_f1: 0.6982
+2026-02-01 11:42:01,377 [INFO] Epoch 6/100 - Val Loss: 0.7279
+2026-02-01 11:42:04,484 [INFO] Epoch 7/100 - Val Loss: 0.7067
+2026-02-01 11:42:07,760 [INFO] Epoch 8/100 - Val Loss: 0.7201
+2026-02-01 11:42:10,903 [INFO] Epoch 9/100 - Val Loss: 0.8156
+2026-02-01 11:42:14,024 [INFO] Epoch 10/100 - Val Loss: 0.7276
+2026-02-01 11:42:14,189 [INFO] Epoch 10/100 - Train Loss: 389.5574, Val Loss: 0.7276, Val macro_f1: 0.7440
+2026-02-01 11:42:17,170 [INFO] Epoch 11/100 - Val Loss: 0.7454
+2026-02-01 11:42:20,323 [INFO] Epoch 12/100 - Val Loss: 0.6894
+2026-02-01 11:42:23,454 [INFO] Epoch 13/100 - Val Loss: 0.6388
+2026-02-01 11:42:26,607 [INFO] Epoch 14/100 - Val Loss: 0.5963
+2026-02-01 11:42:29,752 [INFO] Epoch 15/100 - Val Loss: 0.7146
+2026-02-01 11:42:29,917 [INFO] Epoch 15/100 - Train Loss: 381.8979, Val Loss: 0.7146, Val macro_f1: 0.7025
+2026-02-01 11:42:32,978 [INFO] Epoch 16/100 - Val Loss: 0.6732
+2026-02-01 11:42:36,137 [INFO] Epoch 17/100 - Val Loss: 0.6312
+2026-02-01 11:42:39,267 [INFO] Epoch 18/100 - Val Loss: 0.7369
+2026-02-01 11:42:42,385 [INFO] Epoch 19/100 - Val Loss: 0.5362
+2026-02-01 11:42:43,763 [INFO] Epoch 20/100 - Val Loss: 0.6066
+2026-02-01 11:42:43,841 [INFO] Epoch 20/100 - Train Loss: 377.9671, Val Loss: 0.6066, Val macro_f1: 0.7696
+2026-02-01 11:42:45,152 [INFO] Epoch 21/100 - Val Loss: 0.5805
+2026-02-01 11:42:46,506 [INFO] Epoch 22/100 - Val Loss: 0.5367
+2026-02-01 11:42:47,863 [INFO] Epoch 23/100 - Val Loss: 0.5457
+2026-02-01 11:42:49,208 [INFO] Epoch 24/100 - Val Loss: 0.5536
+2026-02-01 11:42:50,558 [INFO] Epoch 25/100 - Val Loss: 0.4879
+2026-02-01 11:42:50,629 [INFO] Epoch 25/100 - Train Loss: 378.7116, Val Loss: 0.4879, Val macro_f1: 0.8183
+2026-02-01 11:42:51,908 [INFO] Epoch 26/100 - Val Loss: 0.5407
+2026-02-01 11:42:53,280 [INFO] Epoch 27/100 - Val Loss: 0.4837
+2026-02-01 11:42:54,679 [INFO] Epoch 28/100 - Val Loss: 0.6386
+2026-02-01 11:42:56,053 [INFO] Epoch 29/100 - Val Loss: 0.5196
+2026-02-01 11:42:58,003 [INFO] Epoch 30/100 - Val Loss: 0.5707
+2026-02-01 11:42:58,166 [INFO] Epoch 30/100 - Train Loss: 379.2677, Val Loss: 0.5707, Val macro_f1: 0.7819
+2026-02-01 11:43:01,277 [INFO] Epoch 31/100 - Val Loss: 0.5802
+2026-02-01 11:43:04,455 [INFO] Epoch 32/100 - Val Loss: 0.5256
+2026-02-01 11:43:07,611 [INFO] Epoch 33/100 - Val Loss: 0.5851
+2026-02-01 11:43:10,822 [INFO] Epoch 34/100 - Val Loss: 0.7005
+2026-02-01 11:43:14,001 [INFO] Epoch 35/100 - Val Loss: 0.7863
+2026-02-01 11:43:14,169 [INFO] Epoch 35/100 - Train Loss: 389.3961, Val Loss: 0.7863, Val macro_f1: 0.6652
+2026-02-01 11:43:17,233 [INFO] Epoch 36/100 - Val Loss: 0.6232
+2026-02-01 11:43:20,415 [INFO] Epoch 37/100 - Val Loss: 0.5692
+2026-02-01 11:43:20,582 [INFO] Early stopping at epoch 37
+2026-02-01 11:43:20,741 [INFO] Collected test logits and targets
+2026-02-01 11:43:20,756 [INFO] Calibration: T=0.8641, Details={'temperature': 0.8640996217727661, 'best_nll': 0.5413343906402588, 'method': 'logspace'}
+2026-02-01 11:43:20,940 [INFO] Saved full results to results_gpu\stea_ablation\pretrain\out.json
+2026-02-01 11:43:20,956 [INFO] Final model saved to results_gpu\stea_ablation\pretrain\final_out.pth
+2026-02-01 11:43:20,957 [INFO] Updated registry: results\registry.csv

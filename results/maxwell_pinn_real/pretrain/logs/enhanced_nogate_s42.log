@@ -1,0 +1,73 @@
+2026-02-22 11:48:20,277 [INFO] Starting training with args: {'model': 'enhanced', 'difficulty': 'hard', 'seed': 42, 'F': 52, 'T': 32, 'num_classes': 8, 'epochs': 100, 'batch': 64, 'n_samples': 5000, 'early_metric': 'macro_f1', 'patience': 10, 'ckpt_dir': 'D:\\phd_workspace\\paperA\\results_gpu\\maxwell_pinn_real\\pretrain', 'logit_l2': 0.0, 'sc_corr_rho': 0.5, 'env_burst_rate': 0.1, 'gain_drift_std': 0.1, 'class_overlap': 0.8, 'temp_mode': 'logspace', 'temp_min': 1.0, 'temp_max': 5.0, 'temp_steps': 100, 'val_split': 0.5, 'fixed_temp': 1.0, 'label_noise_prob': 0.0, 'cache_dir': 'cache/synth_data', 'amp': False, 'save_ckpt': 'final', 'num_workers_override': -1, 'prefetch_factor': 2, 'val_every': 1, 'out_json': 'D:\\phd_workspace\\paperA\\results_gpu\\maxwell_pinn_real\\pretrain\\enhanced_nogate_s42.json', 'log_dir': '', 'pinn_lambda_smooth': 0.0, 'pinn_lambda_energy': 0.0, 'pinn_ms_windows': '32,64,128', 'pinn_mamba_dmodel': 192, 'pinn_mamba_layers': 3, 'lambda_phy_mse': 1.0, 'lambda_phy_res': 0.1, 'residual_threshold': 0.05, 'use_residual_gate': False}
+2026-02-22 11:48:20,277 [INFO] Logs saved to: D:\phd_workspace\paperA\results_gpu\maxwell_pinn_real\pretrain\logs\enhanced_nogate_s42.log
+2026-02-22 11:48:20,310 [INFO] Using device: cuda
+2026-02-22 11:48:20,424 [INFO] Dataset: Train=3500, Val=750, Test=750
+2026-02-22 11:48:20,425 [INFO] DataLoader: num_workers=2, pin_memory=True
+2026-02-22 11:48:20,539 [INFO] Model: enhanced with 641355 params
+2026-02-22 11:48:24,776 [INFO] Epoch 1/100 - Val Loss: 1.3176
+2026-02-22 11:48:26,342 [INFO] Epoch 2/100 - Val Loss: 1.1908
+2026-02-22 11:48:27,892 [INFO] Epoch 3/100 - Val Loss: 0.9962
+2026-02-22 11:48:29,494 [INFO] Epoch 4/100 - Val Loss: 0.9346
+2026-02-22 11:48:31,056 [INFO] Epoch 5/100 - Val Loss: 0.8253
+2026-02-22 11:48:31,140 [INFO] Epoch 5/100 - Train Loss: 385.1900, Val Loss: 0.8253, Val macro_f1: 0.6731
+2026-02-22 11:48:32,652 [INFO] Epoch 6/100 - Val Loss: 0.7968
+2026-02-22 11:48:34,228 [INFO] Epoch 7/100 - Val Loss: 0.7780
+2026-02-22 11:48:35,863 [INFO] Epoch 8/100 - Val Loss: 0.8073
+2026-02-22 11:48:37,445 [INFO] Epoch 9/100 - Val Loss: 0.6991
+2026-02-22 11:48:39,027 [INFO] Epoch 10/100 - Val Loss: 0.6546
+2026-02-22 11:48:39,133 [INFO] Epoch 10/100 - Train Loss: 378.3969, Val Loss: 0.6546, Val macro_f1: 0.7319
+2026-02-22 11:48:40,628 [INFO] Epoch 11/100 - Val Loss: 0.6656
+2026-02-22 11:48:42,227 [INFO] Epoch 12/100 - Val Loss: 0.6376
+2026-02-22 11:48:43,815 [INFO] Epoch 13/100 - Val Loss: 0.6797
+2026-02-22 11:48:45,381 [INFO] Epoch 14/100 - Val Loss: 0.5840
+2026-02-22 11:48:46,969 [INFO] Epoch 15/100 - Val Loss: 0.6127
+2026-02-22 11:48:47,073 [INFO] Epoch 15/100 - Train Loss: 376.0953, Val Loss: 0.6127, Val macro_f1: 0.7747
+2026-02-22 11:48:48,582 [INFO] Epoch 16/100 - Val Loss: 0.5661
+2026-02-22 11:48:50,131 [INFO] Epoch 17/100 - Val Loss: 0.5320
+2026-02-22 11:48:51,644 [INFO] Epoch 18/100 - Val Loss: 0.6203
+2026-02-22 11:48:53,179 [INFO] Epoch 19/100 - Val Loss: 0.6941
+2026-02-22 11:48:54,724 [INFO] Epoch 20/100 - Val Loss: 0.6078
+2026-02-22 11:48:54,813 [INFO] Epoch 20/100 - Train Loss: 378.1235, Val Loss: 0.6078, Val macro_f1: 0.7696
+2026-02-22 11:48:56,263 [INFO] Epoch 21/100 - Val Loss: 0.5973
+2026-02-22 11:48:57,794 [INFO] Epoch 22/100 - Val Loss: 0.6164
+2026-02-22 11:48:59,330 [INFO] Epoch 23/100 - Val Loss: 0.5563
+2026-02-22 11:49:00,855 [INFO] Epoch 24/100 - Val Loss: 0.7779
+2026-02-22 11:49:02,415 [INFO] Epoch 25/100 - Val Loss: 0.6388
+2026-02-22 11:49:02,496 [INFO] Epoch 25/100 - Train Loss: 378.1197, Val Loss: 0.6388, Val macro_f1: 0.7354
+2026-02-22 11:49:03,941 [INFO] Epoch 26/100 - Val Loss: 0.5712
+2026-02-22 11:49:05,462 [INFO] Epoch 27/100 - Val Loss: 0.7570
+2026-02-22 11:49:07,001 [INFO] Epoch 28/100 - Val Loss: 0.5614
+2026-02-22 11:49:08,528 [INFO] Epoch 29/100 - Val Loss: 0.5833
+2026-02-22 11:49:10,061 [INFO] Epoch 30/100 - Val Loss: 0.5327
+2026-02-22 11:49:10,149 [INFO] Epoch 30/100 - Train Loss: 383.2031, Val Loss: 0.5327, Val macro_f1: 0.8066
+2026-02-22 11:49:11,585 [INFO] Epoch 31/100 - Val Loss: 0.5349
+2026-02-22 11:49:13,131 [INFO] Epoch 32/100 - Val Loss: 0.5095
+2026-02-22 11:49:14,681 [INFO] Epoch 33/100 - Val Loss: 0.6117
+2026-02-22 11:49:16,207 [INFO] Epoch 34/100 - Val Loss: 0.5515
+2026-02-22 11:49:17,797 [INFO] Epoch 35/100 - Val Loss: 0.5492
+2026-02-22 11:49:17,884 [INFO] Epoch 35/100 - Train Loss: 380.0963, Val Loss: 0.5492, Val macro_f1: 0.7803
+2026-02-22 11:49:19,378 [INFO] Epoch 36/100 - Val Loss: 0.5446
+2026-02-22 11:49:20,931 [INFO] Epoch 37/100 - Val Loss: 0.7457
+2026-02-22 11:49:22,468 [INFO] Epoch 38/100 - Val Loss: 0.6317
+2026-02-22 11:49:24,049 [INFO] Epoch 39/100 - Val Loss: 0.5914
+2026-02-22 11:49:25,571 [INFO] Epoch 40/100 - Val Loss: 0.6160
+2026-02-22 11:49:25,652 [INFO] Epoch 40/100 - Train Loss: 387.5580, Val Loss: 0.6160, Val macro_f1: 0.7817
+2026-02-22 11:49:27,069 [INFO] Epoch 41/100 - Val Loss: 0.4850
+2026-02-22 11:49:28,559 [INFO] Epoch 42/100 - Val Loss: 0.5474
+2026-02-22 11:49:30,048 [INFO] Epoch 43/100 - Val Loss: 0.6098
+2026-02-22 11:49:31,535 [INFO] Epoch 44/100 - Val Loss: 0.5489
+2026-02-22 11:49:33,065 [INFO] Epoch 45/100 - Val Loss: 0.8401
+2026-02-22 11:49:33,145 [INFO] Epoch 45/100 - Train Loss: 380.6616, Val Loss: 0.8401, Val macro_f1: 0.6599
+2026-02-22 11:49:34,576 [INFO] Epoch 46/100 - Val Loss: 0.4968
+2026-02-22 11:49:36,115 [INFO] Epoch 47/100 - Val Loss: 0.7234
+2026-02-22 11:49:37,664 [INFO] Epoch 48/100 - Val Loss: 0.5291
+2026-02-22 11:49:39,435 [INFO] Epoch 49/100 - Val Loss: 0.5318
+2026-02-22 11:49:41,023 [INFO] Epoch 50/100 - Val Loss: 0.6872
+2026-02-22 11:49:41,115 [INFO] Epoch 50/100 - Train Loss: 388.2720, Val Loss: 0.6872, Val macro_f1: 0.6899
+2026-02-22 11:49:42,536 [INFO] Epoch 51/100 - Val Loss: 0.5614
+2026-02-22 11:49:42,614 [INFO] Early stopping at epoch 51
+2026-02-22 11:49:42,693 [INFO] Collected test logits and targets
+2026-02-22 11:49:42,708 [INFO] Calibration: T=0.7810, Details={'temperature': 0.7810443639755249, 'best_nll': 0.561042070388794, 'method': 'logspace'}
+2026-02-22 11:49:42,879 [INFO] Saved full results to D:\phd_workspace\paperA\results_gpu\maxwell_pinn_real\pretrain\enhanced_nogate_s42.json
+2026-02-22 11:49:42,896 [INFO] Final model saved to D:\phd_workspace\paperA\results_gpu\maxwell_pinn_real\pretrain\final_enhanced_nogate_s42.pth
+2026-02-22 11:49:42,897 [INFO] Updated registry: results\registry.csv

@@ -1,0 +1,32 @@
+2026-02-01 11:11:46,822 [INFO] Starting training with args: {'model': 'enhanced', 'difficulty': 'hard', 'seed': 0, 'F': 52, 'T': 32, 'num_classes': 8, 'epochs': 50, 'batch': 64, 'n_samples': 5000, 'early_metric': 'macro_f1', 'patience': 10, 'ckpt_dir': 'D:\\phd_workspace\\paperA\\results_gpu\\maxwell_ablation\\checkpoints', 'logit_l2': 0.0, 'sc_corr_rho': 0.5, 'env_burst_rate': 0.1, 'gain_drift_std': 0.1, 'class_overlap': 0.8, 'temp_mode': 'logspace', 'temp_min': 1.0, 'temp_max': 5.0, 'temp_steps': 100, 'val_split': 0.5, 'fixed_temp': 1.0, 'label_noise_prob': 0.0, 'cache_dir': 'cache/synth_data', 'amp': False, 'save_ckpt': 'final', 'num_workers_override': -1, 'prefetch_factor': 2, 'val_every': 1, 'out_json': 'D:\\phd_workspace\\paperA\\results_gpu\\maxwell_ablation\\maxwell_pinn_v3.json', 'log_dir': 'D:\\phd_workspace\\paperA\\results_gpu\\maxwell_ablation\\logs', 'pinn_lambda_smooth': 0.0, 'pinn_lambda_energy': 0.0, 'pinn_ms_windows': '32,64,128', 'pinn_mamba_dmodel': 192, 'pinn_mamba_layers': 3, 'lambda_phy_mse': 2.0, 'lambda_phy_res': 0.001, 'residual_threshold': 0.2, 'use_residual_gate': True}
+2026-02-01 11:11:46,822 [INFO] Logs saved to: D:\phd_workspace\paperA\results_gpu\maxwell_ablation\logs\maxwell_pinn_v3.log
+2026-02-01 11:11:49,085 [INFO] Using device: cuda
+2026-02-01 11:11:49,093 [INFO] Dataset: Train=3500, Val=750, Test=750
+2026-02-01 11:11:49,093 [INFO] DataLoader: num_workers=2, pin_memory=True
+2026-02-01 11:11:49,159 [INFO] Model: enhanced with 641355 params
+2026-02-01 11:11:52,323 [INFO] Epoch 1/50 - Val Loss: 3.0830
+2026-02-01 11:11:53,618 [INFO] Epoch 2/50 - Val Loss: 3.2301
+2026-02-01 11:11:54,912 [INFO] Epoch 3/50 - Val Loss: 3.1636
+2026-02-01 11:11:56,192 [INFO] Epoch 4/50 - Val Loss: 3.1881
+2026-02-01 11:11:57,510 [INFO] Epoch 5/50 - Val Loss: 3.1763
+2026-02-01 11:11:57,580 [INFO] Epoch 5/50 - Train Loss: 104574203.4909, Val Loss: 3.1763, Val macro_f1: 0.0460
+2026-02-01 11:11:58,783 [INFO] Epoch 6/50 - Val Loss: 3.3392
+2026-02-01 11:12:00,076 [INFO] Epoch 7/50 - Val Loss: 3.3374
+2026-02-01 11:12:01,367 [INFO] Epoch 8/50 - Val Loss: 3.5681
+2026-02-01 11:12:02,649 [INFO] Epoch 9/50 - Val Loss: 3.5893
+2026-02-01 11:12:03,931 [INFO] Epoch 10/50 - Val Loss: 3.6464
+2026-02-01 11:12:04,001 [INFO] Epoch 10/50 - Train Loss: 100708342.1091, Val Loss: 3.6464, Val macro_f1: 0.0747
+2026-02-01 11:12:05,227 [INFO] Epoch 11/50 - Val Loss: 3.6288
+2026-02-01 11:12:06,538 [INFO] Epoch 12/50 - Val Loss: 3.7777
+2026-02-01 11:12:07,838 [INFO] Epoch 13/50 - Val Loss: 3.6585
+2026-02-01 11:12:09,144 [INFO] Epoch 14/50 - Val Loss: 3.8667
+2026-02-01 11:12:10,458 [INFO] Epoch 15/50 - Val Loss: 3.6460
+2026-02-01 11:12:10,527 [INFO] Epoch 15/50 - Train Loss: 102957411.9273, Val Loss: 3.6460, Val macro_f1: 0.0857
+2026-02-01 11:12:11,793 [INFO] Epoch 16/50 - Val Loss: 3.6741
+2026-02-01 11:12:13,068 [INFO] Epoch 17/50 - Val Loss: 3.7903
+2026-02-01 11:12:13,137 [INFO] Early stopping at epoch 17
+2026-02-01 11:12:13,206 [INFO] Collected test logits and targets
+2026-02-01 11:12:13,210 [INFO] Calibration: T=5.0000, Details={'temperature': 5.0, 'best_nll': 2.2515640258789062, 'method': 'logspace'}
+2026-02-01 11:12:13,317 [INFO] Saved full results to D:\phd_workspace\paperA\results_gpu\maxwell_ablation\maxwell_pinn_v3.json
+2026-02-01 11:12:13,330 [INFO] Final model saved to D:\phd_workspace\paperA\results_gpu\maxwell_ablation\checkpoints\final_enhanced_0_hard.pth
+2026-02-01 11:12:13,331 [INFO] Updated registry: results\registry.csv

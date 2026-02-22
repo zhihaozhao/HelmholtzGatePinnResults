@@ -1,0 +1,72 @@
+{
+  "meta": {
+    "model": "enhanced",
+    "difficulty": "hard",
+    "seed": 42,
+    "F": 52,
+    "T": 32,
+    "num_classes": 8,
+    "git_commit": "641092dcea625170d0b4bfbf3c9e97f6ea7ed5a2",
+    "git_branch": "feat/enhanced-model-and-sweep",
+    "device": "cuda",
+    "timestamp": "2026-02-22T03:49:42.877780Z"
+  },
+  "args": {
+    "model": "enhanced",
+    "difficulty": "hard",
+    "seed": 42,
+    "epochs": 100,
+    "batch": 64,
+    "n_samples": 5000,
+    "T": 32,
+    "F": 52,
+    "sc_corr_rho": 0.5,
+    "env_burst_rate": 0.1,
+    "gain_drift_std": 0.1,
+    "class_overlap": 0.8,
+    "label_noise_prob": 0.0,
+    "early_metric": "macro_f1",
+    "patience": 10,
+    "ckpt_dir": "D:\\phd_workspace\\paperA\\results_gpu\\maxwell_pinn_real\\pretrain",
+    "logit_l2": 0.0,
+    "temp_mode": "logspace",
+    "temp_min": 1.0,
+    "temp_max": 5.0,
+    "temp_steps": 100,
+    "val_split": 0.5,
+    "fixed_temp": 1.0,
+    "out_json": "D:\\phd_workspace\\paperA\\results_gpu\\maxwell_pinn_real\\pretrain\\enhanced_nogate_s42.json"
+  },
+  "metrics": {
+    "macro_f1": 0.7648168074260051,
+    "ece_raw": 0.06743131419022878,
+    "ece_cal": 0.024950053652127584,
+    "nll_raw": 0.5886118412017822,
+    "nll_cal": 0.5739726424217224,
+    "brier": 0.038657698382408505,
+    "mutual_misclass": 0.03198817445705948,
+    "temperature": 0.7810443639755249,
+    "falling_f1": 0.7648168074260051
+  },
+  "seed": 42,
+  "best_ckpt": null,
+  "early_stop": {
+    "metric": "macro_f1",
+    "best_value": 0.8088883171404286,
+    "best_epoch": 41,
+    "patience": 10
+  },
+  "data_params": {
+    "n_samples": 5000,
+    "sc_corr_rho": 0.5,
+    "env_burst_rate": 0.1,
+    "gain_drift_std": 0.1,
+    "class_overlap": 0.8,
+    "label_noise_prob": 0.0
+  },
+  "calibration": {
+    "temperature": 0.7810443639755249,
+    "best_nll": 0.561042070388794,
+    "method": "logspace"
+  }
+}

@@ -1,0 +1,40 @@
+2026-02-01 11:58:03,475 [INFO] Starting training with args: {'model': 'enhanced', 'difficulty': 'hard', 'seed': 42, 'F': 52, 'T': 32, 'num_classes': 8, 'epochs': 50, 'batch': 64, 'n_samples': 5000, 'early_metric': 'macro_f1', 'patience': 10, 'ckpt_dir': 'results_gpu\\srv_lite\\checkpoints', 'logit_l2': 0.0, 'sc_corr_rho': 0.5, 'env_burst_rate': 0.1, 'gain_drift_std': 0.1, 'class_overlap': 1.0, 'temp_mode': 'logspace', 'temp_min': 1.0, 'temp_max': 5.0, 'temp_steps': 100, 'val_split': 0.5, 'fixed_temp': 1.0, 'label_noise_prob': 0.0, 'cache_dir': 'cache/synth_data', 'amp': False, 'save_ckpt': 'final', 'num_workers_override': -1, 'prefetch_factor': 2, 'val_every': 1, 'out_json': 'results_gpu\\srv_lite\\srv_overlap.json', 'log_dir': 'results_gpu\\srv_lite\\logs', 'pinn_lambda_smooth': 0.0, 'pinn_lambda_energy': 0.0, 'pinn_ms_windows': '32,64,128', 'pinn_mamba_dmodel': 192, 'pinn_mamba_layers': 3, 'lambda_phy_mse': 1.0, 'lambda_phy_res': 0.1, 'residual_threshold': 0.05, 'use_residual_gate': True}
+2026-02-01 11:58:03,475 [INFO] Logs saved to: D:\phd_workspace\paperA\results_gpu\srv_lite\logs\srv_overlap.log
+2026-02-01 11:58:04,572 [INFO] Using device: cuda
+2026-02-01 11:58:10,118 [INFO] Dataset: Train=3500, Val=750, Test=750
+2026-02-01 11:58:10,118 [INFO] DataLoader: num_workers=2, pin_memory=True
+2026-02-01 11:58:11,312 [INFO] Model: enhanced with 641355 params
+2026-02-01 11:58:14,630 [INFO] Epoch 1/50 - Val Loss: 2.1145
+2026-02-01 11:58:15,945 [INFO] Epoch 2/50 - Val Loss: 2.1172
+2026-02-01 11:58:17,266 [INFO] Epoch 3/50 - Val Loss: 2.0989
+2026-02-01 11:58:18,586 [INFO] Epoch 4/50 - Val Loss: 2.0844
+2026-02-01 11:58:19,895 [INFO] Epoch 5/50 - Val Loss: 2.0787
+2026-02-01 11:58:19,966 [INFO] Epoch 5/50 - Train Loss: 3241.0496, Val Loss: 2.0787, Val macro_f1: 0.0958
+2026-02-01 11:58:21,222 [INFO] Epoch 6/50 - Val Loss: 2.0648
+2026-02-01 11:58:22,548 [INFO] Epoch 7/50 - Val Loss: 2.0633
+2026-02-01 11:58:23,863 [INFO] Epoch 8/50 - Val Loss: 2.0683
+2026-02-01 11:58:25,191 [INFO] Epoch 9/50 - Val Loss: 2.0647
+2026-02-01 11:58:26,501 [INFO] Epoch 10/50 - Val Loss: 2.0674
+2026-02-01 11:58:26,573 [INFO] Epoch 10/50 - Train Loss: 3254.4116, Val Loss: 2.0674, Val macro_f1: 0.1483
+2026-02-01 11:58:27,822 [INFO] Epoch 11/50 - Val Loss: 2.0564
+2026-02-01 11:58:29,148 [INFO] Epoch 12/50 - Val Loss: 2.0575
+2026-02-01 11:58:30,464 [INFO] Epoch 13/50 - Val Loss: 2.0577
+2026-02-01 11:58:31,776 [INFO] Epoch 14/50 - Val Loss: 2.0588
+2026-02-01 11:58:33,096 [INFO] Epoch 15/50 - Val Loss: 2.0657
+2026-02-01 11:58:33,166 [INFO] Epoch 15/50 - Train Loss: 3166.5598, Val Loss: 2.0657, Val macro_f1: 0.1692
+2026-02-01 11:58:34,415 [INFO] Epoch 16/50 - Val Loss: 2.0664
+2026-02-01 11:58:35,715 [INFO] Epoch 17/50 - Val Loss: 2.0738
+2026-02-01 11:58:37,029 [INFO] Epoch 18/50 - Val Loss: 2.0589
+2026-02-01 11:58:38,373 [INFO] Epoch 19/50 - Val Loss: 2.0588
+2026-02-01 11:58:39,693 [INFO] Epoch 20/50 - Val Loss: 2.0463
+2026-02-01 11:58:39,763 [INFO] Epoch 20/50 - Train Loss: 3156.9115, Val Loss: 2.0463, Val macro_f1: 0.1530
+2026-02-01 11:58:41,001 [INFO] Epoch 21/50 - Val Loss: 2.0569
+2026-02-01 11:58:42,315 [INFO] Epoch 22/50 - Val Loss: 2.0495
+2026-02-01 11:58:43,627 [INFO] Epoch 23/50 - Val Loss: 2.0523
+2026-02-01 11:58:44,955 [INFO] Epoch 24/50 - Val Loss: 2.0537
+2026-02-01 11:58:45,028 [INFO] Early stopping at epoch 24
+2026-02-01 11:58:45,099 [INFO] Collected test logits and targets
+2026-02-01 11:58:45,109 [INFO] Calibration: T=0.5555, Details={'temperature': 0.5555054545402527, 'best_nll': 2.051098585128784, 'method': 'logspace'}
+2026-02-01 11:58:45,244 [INFO] Saved full results to results_gpu\srv_lite\srv_overlap.json
+2026-02-01 11:58:45,257 [INFO] Final model saved to results_gpu\srv_lite\checkpoints\final_srv_overlap.pth
+2026-02-01 11:58:45,258 [INFO] Updated registry: results\registry.csv

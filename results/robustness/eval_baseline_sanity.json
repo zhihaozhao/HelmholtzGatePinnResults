@@ -1,0 +1,105 @@
+{
+  "args": {
+    "model": "enhanced",
+    "F": 52,
+    "T": 32,
+    "num_classes": 8,
+    "ckpt_path": "D:\\phd_workspace\\paperA\\results_gpu\\maxwell_ablation\\checkpoints\\final_baseline_ean.pth",
+    "difficulty": "hard",
+    "n_samples": 1000,
+    "batch": 256,
+    "seed": 0,
+    "env_burst_rate": 0.1,
+    "gain_drift_std": 0.1,
+    "sc_corr_rho": 0.5,
+    "class_overlap": 0.8,
+    "label_noise_prob": 0.0,
+    "cache_dir": "cache/eval_data",
+    "out_json": "D:\\phd_workspace\\paperA\\results_gpu\\robustness\\eval_baseline_sanity.json"
+  },
+  "metrics": {
+    "macro_f1": 0.9282191633327626,
+    "cm": [
+      [
+        18,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        22,
+        3,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        2,
+        20,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        17,
+        2,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        2,
+        11,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        22,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        12,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        17
+      ]
+    ]
+  }
+}

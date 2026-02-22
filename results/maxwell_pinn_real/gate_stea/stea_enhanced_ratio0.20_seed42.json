@@ -1,0 +1,83 @@
+{
+  "protocol": "Sim2Real",
+  "model": "enhanced",
+  "seed": 42,
+  "label_ratio": 0.2,
+  "transfer_method": "fine_tune",
+  "zero_shot_metrics": {
+    "macro_f1": 0.07270881997824577,
+    "falling_f1": 0.07270881997824577,
+    "epileptic_fall_f1": 0.2096530920060332,
+    "elderly_fall_f1": 0.0,
+    "behavior_f1": {
+      "Normal Walking": 0.3411371237458194,
+      "Shaking Limbs": 0.0,
+      "Facial Twitching": 0.0,
+      "Punching": 0.028447254049782694,
+      "Kicking": 0.0,
+      "Epileptic Fall": 0.2096530920060332,
+      "Elderly Fall": 0.0,
+      "Fall and Can't Get Up": 0.0024330900243309003
+    },
+    "ece": 0.04845666332116512
+  },
+  "target_metrics": {
+    "macro_f1": 0.8155670648604776,
+    "falling_f1": 0.8155670648604776,
+    "epileptic_fall_f1": 0.9350961538461539,
+    "elderly_fall_f1": 0.9559902200488998,
+    "behavior_f1": {
+      "Normal Walking": 0.9824135839902971,
+      "Shaking Limbs": 0.9732360097323601,
+      "Facial Twitching": 0.9902912621359223,
+      "Punching": 0.0,
+      "Kicking": 0.7464788732394366,
+      "Epileptic Fall": 0.9350961538461539,
+      "Elderly Fall": 0.9559902200488998,
+      "Fall and Can't Get Up": 0.9410304158907511
+    },
+    "ece": 0.014627363936138097
+  },
+  "meta": {
+    "run_id": "D4-Sim2Real-V1-20260222-140306-806d80e5",
+    "phase": "D4",
+    "exp": "Sim2Real",
+    "ver": "V1",
+    "desc": "Sim2Real fine_tune with 20.0% labels",
+    "time_start": "2026-02-22T14:03:06",
+    "args": {
+      "model": "enhanced",
+      "protocol": "sim2real",
+      "seed": 42.0,
+      "epochs": 50.0,
+      "out": "D:\\phd_workspace\\paperA\\results_gpu\\maxwell_pinn_real\\gate_stea\\stea_enhanced_ratio0.20_seed42.json",
+      "resume": 0.0,
+      "benchmark_path": "benchmarks/wifi_csi_benchmark",
+      "files_per_activity": 3.0,
+      "output_dir": "results",
+      "d2_model_path": "D:\\phd_workspace\\paperA\\results_gpu\\maxwell_pinn_real\\pretrain\\final_enhanced_gate_s42.pth",
+      "label_ratio": 0.2,
+      "transfer_method": "fine_tune",
+      "skip_synth_pretrain": 0.0,
+      "lr": 0.001,
+      "batch_size": 128.0,
+      "class_weight": "inv_freq",
+      "loso_all_folds": 0.0,
+      "patience": 10.0,
+      "min_epochs": 15.0,
+      "loro_all_folds": 0.0,
+      "positive_class": 5.0,
+      "amp": 1.0,
+      "checkpoint_dir": "checkpoints/maxwell_cdae",
+      "num_workers": 4.0,
+      "input_norm": "zscore",
+      "norm_eps": 1e-06,
+      "source": "synth",
+      "target": "real",
+      "difficulty": "mid",
+      "n_samples": 2000.0,
+      "T": 128.0,
+      "F": 30.0
+    }
+  }
+}

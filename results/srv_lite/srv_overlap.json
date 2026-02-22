@@ -1,0 +1,72 @@
+{
+  "meta": {
+    "model": "enhanced",
+    "difficulty": "hard",
+    "seed": 42,
+    "F": 52,
+    "T": 32,
+    "num_classes": 8,
+    "git_commit": "641092dcea625170d0b4bfbf3c9e97f6ea7ed5a2",
+    "git_branch": "feat/enhanced-model-and-sweep",
+    "device": "cuda",
+    "timestamp": "2026-02-01T03:58:45.243308Z"
+  },
+  "args": {
+    "model": "enhanced",
+    "difficulty": "hard",
+    "seed": 42,
+    "epochs": 50,
+    "batch": 64,
+    "n_samples": 5000,
+    "T": 32,
+    "F": 52,
+    "sc_corr_rho": 0.5,
+    "env_burst_rate": 0.1,
+    "gain_drift_std": 0.1,
+    "class_overlap": 1.0,
+    "label_noise_prob": 0.0,
+    "early_metric": "macro_f1",
+    "patience": 10,
+    "ckpt_dir": "results_gpu\\srv_lite\\checkpoints",
+    "logit_l2": 0.0,
+    "temp_mode": "logspace",
+    "temp_min": 1.0,
+    "temp_max": 5.0,
+    "temp_steps": 100,
+    "val_split": 0.5,
+    "fixed_temp": 1.0,
+    "out_json": "results_gpu\\srv_lite\\srv_overlap.json"
+  },
+  "metrics": {
+    "macro_f1": 0.1120310460364582,
+    "ece_raw": 0.03274758160114288,
+    "ece_cal": 0.027980367422103882,
+    "nll_raw": 2.051198959350586,
+    "nll_cal": 2.041583299636841,
+    "brier": 0.10834088130418613,
+    "mutual_misclass": 0.11660517894063789,
+    "temperature": 0.5555054545402527,
+    "falling_f1": 0.1120310460364582
+  },
+  "seed": 42,
+  "best_ckpt": null,
+  "early_stop": {
+    "metric": "macro_f1",
+    "best_value": 0.1879188062338436,
+    "best_epoch": 14,
+    "patience": 10
+  },
+  "data_params": {
+    "n_samples": 5000,
+    "sc_corr_rho": 0.5,
+    "env_burst_rate": 0.1,
+    "gain_drift_std": 0.1,
+    "class_overlap": 1.0,
+    "label_noise_prob": 0.0
+  },
+  "calibration": {
+    "temperature": 0.5555054545402527,
+    "best_nll": 2.051098585128784,
+    "method": "logspace"
+  }
+}
