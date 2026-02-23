@@ -6,7 +6,7 @@ This repository accompanies the paper:
 
 > **Physics-Informed Neural Network with Helmholtz Wave Equation Constraints for WiFi CSI-based Human Activity Recognition**
 >
-> *Submitted to IEEE Internet of Things Journal*
+> *Submitted to xxx*
 
 ## Overview
 
@@ -177,7 +177,7 @@ This repository is provided for academic research purposes. Please cite the acco
 @article{zhao2026maxwell_pinn_har,
   title={Physics-Informed Neural Network with Helmholtz Wave Equation Constraints for WiFi CSI-based Human Activity Recognition},
   author={Zhao, Zhihao and others},
-  journal={IEEE Internet of Things Journal},
+  journal={xxx*},
   year={2026},
   note={Under Review}
 }
