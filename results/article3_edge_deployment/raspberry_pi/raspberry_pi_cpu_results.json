@@ -1,0 +1,67 @@
+{
+  "test_config": {
+    "platform": "raspberry_pi",
+    "device": "cpu",
+    "batch_size": 1,
+    "input_shape": [
+      1,
+      128,
+      52
+    ],
+    "warmup_iterations": 30,
+    "test_iterations": 100
+  },
+  "system_info": {
+    "platform": "Linux",
+    "platform_release": "6.12.47+rpt-rpi-v8",
+    "platform_version": "#1 SMP PREEMPT Debian 1:6.12.47-1+rpt1 (2025-09-16)",
+    "architecture": "aarch64",
+    "processor": "",
+    "python_version": "3.13.5",
+    "pytorch_version": "2.11.0+cpu",
+    "cpu_count": 4,
+    "cpu_count_logical": 4,
+    "cpu_freq": 1800.0,
+    "total_memory_gb": 7.637420654296875,
+    "cuda_available": false
+  },
+  "results": [
+    {
+      "model_name": "Backbone_Only",
+      "device": "cpu",
+      "platform": "raspberry_pi",
+      "input_shape": [
+        1,
+        128,
+        52
+      ],
+      "parameters": 204232,
+      "parameters_k": 204.232,
+      "memory_mb": 11.33984375,
+      "inference_time_ms": 6.063095400005523,
+      "inference_std_ms": 0.12455220616992167,
+      "real_time_ready": true
+    },
+    {
+      "model_name": "Maxwell_PINN",
+      "device": "cpu",
+      "platform": "raspberry_pi",
+      "input_shape": [
+        1,
+        128,
+        52
+      ],
+      "parameters": 255914,
+      "parameters_k": 255.914,
+      "memory_mb": 0.484375,
+      "inference_time_ms": 7.395244059994184,
+      "inference_std_ms": 0.09070084932048929,
+      "real_time_ready": true
+    }
+  ],
+  "comparison": {
+    "parameter_increase_percent": 25.305534881899018,
+    "memory_increase_percent": -95.72855666551843,
+    "inference_time_increase_percent": 21.971428323351926
+  }
+}

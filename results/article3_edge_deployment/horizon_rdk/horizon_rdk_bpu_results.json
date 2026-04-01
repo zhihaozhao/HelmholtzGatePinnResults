@@ -1,0 +1,67 @@
+{
+  "test_config": {
+    "platform": "horizon_rdk",
+    "device": "bpu",
+    "batch_size": 1,
+    "input_shape": [
+      1,
+      128,
+      52
+    ],
+    "warmup_iterations": 30,
+    "test_iterations": 100
+  },
+  "system_info": {
+    "platform": "Linux",
+    "platform_release": "6.1.83",
+    "platform_version": "#3 SMP PREEMPT Mon Dec  8 15:42:08 CST 2025",
+    "architecture": "aarch64",
+    "processor": "aarch64",
+    "python_version": "3.10.12",
+    "pytorch_version": "2.11.0+cpu",
+    "cpu_count": 8,
+    "cpu_count_logical": 8,
+    "cpu_freq": 1500.0,
+    "total_memory_gb": 2.9906272888183594,
+    "cuda_available": false
+  },
+  "results": [
+    {
+      "model_name": "Backbone_Only",
+      "device": "bpu",
+      "platform": "horizon_rdk",
+      "input_shape": [
+        1,
+        128,
+        52
+      ],
+      "parameters": 204232,
+      "parameters_k": 204.232,
+      "memory_mb": 9.0,
+      "inference_time_ms": 5.11335442001382,
+      "inference_std_ms": 2.724519884327912,
+      "real_time_ready": true
+    },
+    {
+      "model_name": "Maxwell_PINN",
+      "device": "bpu",
+      "platform": "horizon_rdk",
+      "input_shape": [
+        1,
+        128,
+        52
+      ],
+      "parameters": 255914,
+      "parameters_k": 255.914,
+      "memory_mb": 0.0,
+      "inference_time_ms": 6.397162630000821,
+      "inference_std_ms": 2.031522817347163,
+      "real_time_ready": true
+    }
+  ],
+  "comparison": {
+    "parameter_increase_percent": 25.305534881899018,
+    "memory_increase_percent": null,
+    "inference_time_increase_percent": 25.106967061820267
+  }
+}

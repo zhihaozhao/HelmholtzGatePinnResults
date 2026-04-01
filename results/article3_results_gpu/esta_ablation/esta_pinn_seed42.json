@@ -1,0 +1,72 @@
+{
+  "meta": {
+    "model": "enhanced",
+    "difficulty": "hard",
+    "seed": 42,
+    "F": 52,
+    "T": 32,
+    "num_classes": 8,
+    "git_commit": "5794882cb7bc845e4d38939e1c67f1ad5f68a812",
+    "git_branch": "main",
+    "device": "cuda",
+    "timestamp": "2026-04-01T11:55:41.080461Z"
+  },
+  "args": {
+    "model": "enhanced",
+    "difficulty": "hard",
+    "seed": 42,
+    "epochs": 100,
+    "batch": 64,
+    "n_samples": 5000,
+    "T": 32,
+    "F": 52,
+    "sc_corr_rho": 0.5,
+    "env_burst_rate": 0.1,
+    "gain_drift_std": 0.1,
+    "class_overlap": 0.8,
+    "label_noise_prob": 0.0,
+    "early_metric": "macro_f1",
+    "patience": 15,
+    "ckpt_dir": "results_gpu\\esta_ablation\\checkpoints",
+    "logit_l2": 0.0,
+    "temp_mode": "logspace",
+    "temp_min": 1.0,
+    "temp_max": 5.0,
+    "temp_steps": 100,
+    "val_split": 0.5,
+    "fixed_temp": 1.0,
+    "out_json": "results_gpu\\esta_ablation\\esta_pinn_seed42.json"
+  },
+  "metrics": {
+    "macro_f1": 0.6568067510033223,
+    "ece_raw": 0.06867084769407907,
+    "ece_cal": 0.06255889060099919,
+    "nll_raw": 0.841318666934967,
+    "nll_cal": 0.8346188068389893,
+    "brier": 0.05363220013578662,
+    "mutual_misclass": 0.046500967432437056,
+    "temperature": 0.8365122079849243,
+    "falling_f1": 0.6568067510033223
+  },
+  "seed": 42,
+  "best_ckpt": null,
+  "early_stop": {
+    "metric": "macro_f1",
+    "best_value": 0.8107141510442989,
+    "best_epoch": 28,
+    "patience": 15
+  },
+  "data_params": {
+    "n_samples": 5000,
+    "sc_corr_rho": 0.5,
+    "env_burst_rate": 0.1,
+    "gain_drift_std": 0.1,
+    "class_overlap": 0.8,
+    "label_noise_prob": 0.0
+  },
+  "calibration": {
+    "temperature": 0.8365122079849243,
+    "best_nll": 0.8020769953727722,
+    "method": "logspace"
+  }
+}

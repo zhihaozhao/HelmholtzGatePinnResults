@@ -1,0 +1,33 @@
+{
+  "physics_correlations_by_model": {
+    "cnn": {
+      "mean": 0.0,
+      "std": 0.0,
+      "median": 0.0,
+      "n_samples": 6,
+      "significant_count": 0,
+      "max_correlation": 0.0,
+      "min_correlation": 0.0
+    },
+    "bilstm": {
+      "mean": 0.0,
+      "std": 0.0,
+      "median": 0.0,
+      "n_samples": 6,
+      "significant_count": 0,
+      "max_correlation": 0.0,
+      "min_correlation": 0.0
+    }
+  },
+  "physics_correlations_by_activity": {},
+  "model_comparison": {},
+  "pase_effectiveness": {
+    "overall_mean_correlation": 0.0,
+    "target_correlation": 0.73,
+    "achievement_ratio": 0.0,
+    "total_models_analyzed": 4,
+    "strong_correlations_count": 0,
+    "weak_correlations_count": 12,
+    "effectiveness_verdict": "weak"
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "meta": {
+    "model": "enhanced",
+    "difficulty": "hard",
+    "seed": 0,
+    "F": 52,
+    "T": 32,
+    "num_classes": 8,
+    "git_commit": "5794882cb7bc845e4d38939e1c67f1ad5f68a812",
+    "git_branch": "main",
+    "device": "cuda",
+    "timestamp": "2026-04-01T11:51:53.846137Z"
+  },
+  "args": {
+    "model": "enhanced",
+    "difficulty": "hard",
+    "seed": 0,
+    "epochs": 50,
+    "batch": 64,
+    "n_samples": 5000,
+    "T": 32,
+    "F": 52,
+    "sc_corr_rho": 0.5,
+    "env_burst_rate": 0.1,
+    "gain_drift_std": 0.1,
+    "class_overlap": 0.8,
+    "label_noise_prob": 0.0,
+    "early_metric": "macro_f1",
+    "patience": 10,
+    "ckpt_dir": "D:\\phd_workspace\\WiFi-CSI-Journal-Paper\\article3\\results_gpu\\maxwell_ablation\\checkpoints",
+    "logit_l2": 0.0,
+    "temp_mode": "logspace",
+    "temp_min": 1.0,
+    "temp_max": 5.0,
+    "temp_steps": 100,
+    "val_split": 0.5,
+    "fixed_temp": 1.0,
+    "out_json": "D:\\phd_workspace\\WiFi-CSI-Journal-Paper\\article3\\results_gpu\\maxwell_ablation\\baseline_ean.json"
+  },
+  "metrics": {
+    "macro_f1": 0.9538155080785042,
+    "ece_raw": 0.022926559885342916,
+    "ece_cal": 0.017613742510477703,
+    "nll_raw": 0.13177555799484253,
+    "nll_cal": 0.12202239781618118,
+    "brier": 0.008478857138472781,
+    "mutual_misclass": 0.006487855625001621,
+    "temperature": 1.276158332824707,
+    "falling_f1": 0.9538155080785042
+  },
+  "seed": 0,
+  "best_ckpt": null,
+  "early_stop": {
+    "metric": "macro_f1",
+    "best_value": 0.9605548626703828,
+    "best_epoch": 8,
+    "patience": 10
+  },
+  "data_params": {
+    "n_samples": 5000,
+    "sc_corr_rho": 0.5,
+    "env_burst_rate": 0.1,
+    "gain_drift_std": 0.1,
+    "class_overlap": 0.8,
+    "label_noise_prob": 0.0
+  },
+  "calibration": {
+    "temperature": 1.276158332824707,
+    "best_nll": 0.10525865852832794,
+    "method": "logspace"
+  }
+}

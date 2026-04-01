@@ -1,0 +1,13 @@
+activity,has_se_analysis,has_temporal_analysis,model_name,model_type,physics_correlation
+walking,False,False,best_cnn_0_hard.pth,cnn,0.0
+sitting,False,False,best_cnn_0_hard.pth,cnn,0.0
+standing,False,False,best_cnn_0_hard.pth,cnn,0.0
+falling,False,False,best_cnn_0_hard.pth,cnn,0.0
+picking_up,False,False,best_cnn_0_hard.pth,cnn,0.0
+lying_down,False,False,best_cnn_0_hard.pth,cnn,0.0
+walking,False,False,best_bilstm_0_hard.pth,bilstm,0.0
+sitting,False,False,best_bilstm_0_hard.pth,bilstm,0.0
+standing,False,False,best_bilstm_0_hard.pth,bilstm,0.0
+falling,False,False,best_bilstm_0_hard.pth,bilstm,0.0
+picking_up,False,False,best_bilstm_0_hard.pth,bilstm,0.0
+lying_down,False,False,best_bilstm_0_hard.pth,bilstm,0.0

@@ -1,0 +1,150 @@
+{
+  "enhanced": [
+    {
+      "model_path": "..\\checkpoints\\best_enhanced_0_hard(1).pth",
+      "model_type": "enhanced",
+      "activities": {}
+    },
+    {
+      "model_path": "..\\checkpoints\\best_enhanced_0_hard.pth",
+      "model_type": "enhanced",
+      "activities": {}
+    }
+  ],
+  "cnn": [
+    {
+      "model_path": "..\\checkpoints\\best_cnn_0_hard.pth",
+      "model_type": "cnn",
+      "activities": {
+        "walking": {
+          "se_analysis": {},
+          "temporal_analysis": {},
+          "physics_correlation": 0.0,
+          "csi_input_shape": [
+            4,
+            128,
+            52
+          ]
+        },
+        "sitting": {
+          "se_analysis": {},
+          "temporal_analysis": {},
+          "physics_correlation": 0.0,
+          "csi_input_shape": [
+            4,
+            128,
+            52
+          ]
+        },
+        "standing": {
+          "se_analysis": {},
+          "temporal_analysis": {},
+          "physics_correlation": 0.0,
+          "csi_input_shape": [
+            4,
+            128,
+            52
+          ]
+        },
+        "falling": {
+          "se_analysis": {},
+          "temporal_analysis": {},
+          "physics_correlation": 0.0,
+          "csi_input_shape": [
+            4,
+            128,
+            52
+          ]
+        },
+        "picking_up": {
+          "se_analysis": {},
+          "temporal_analysis": {},
+          "physics_correlation": 0.0,
+          "csi_input_shape": [
+            4,
+            128,
+            52
+          ]
+        },
+        "lying_down": {
+          "se_analysis": {},
+          "temporal_analysis": {},
+          "physics_correlation": 0.0,
+          "csi_input_shape": [
+            4,
+            128,
+            52
+          ]
+        }
+      }
+    }
+  ],
+  "bilstm": [
+    {
+      "model_path": "..\\checkpoints\\best_bilstm_0_hard.pth",
+      "model_type": "bilstm",
+      "activities": {
+        "walking": {
+          "se_analysis": {},
+          "temporal_analysis": {},
+          "physics_correlation": 0.0,
+          "csi_input_shape": [
+            4,
+            128,
+            52
+          ]
+        },
+        "sitting": {
+          "se_analysis": {},
+          "temporal_analysis": {},
+          "physics_correlation": 0.0,
+          "csi_input_shape": [
+            4,
+            128,
+            52
+          ]
+        },
+        "standing": {
+          "se_analysis": {},
+          "temporal_analysis": {},
+          "physics_correlation": 0.0,
+          "csi_input_shape": [
+            4,
+            128,
+            52
+          ]
+        },
+        "falling": {
+          "se_analysis": {},
+          "temporal_analysis": {},
+          "physics_correlation": 0.0,
+          "csi_input_shape": [
+            4,
+            128,
+            52
+          ]
+        },
+        "picking_up": {
+          "se_analysis": {},
+          "temporal_analysis": {},
+          "physics_correlation": 0.0,
+          "csi_input_shape": [
+            4,
+            128,
+            52
+          ]
+        },
+        "lying_down": {
+          "se_analysis": {},
+          "temporal_analysis": {},
+          "physics_correlation": 0.0,
+          "csi_input_shape": [
+            4,
+            128,
+            52
+          ]
+        }
+      }
+    }
+  ]
+}
